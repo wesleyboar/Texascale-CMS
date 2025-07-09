@@ -1,19 +1,13 @@
-## TACC Custom CMS
+## Texascale CMS
 
-https://cep.tacc.utexas.edu/
+https://texascale.org/
 
 > [!IMPORTANT]
 > After creating a repository from [Core CMS Template]:
 >
-> 1. In this doc:
->    1. Rename "TACC Custom CMS" to the name of this project.
->    2. Change https://cep.tacc.utexas.edu/ to URL of this project's website.
-> 2. In `.github/workflows/build.yml`:
->    1. Replace `custom-cms` with the name of this project's CMS image.
-> 3. Delete `/docs` directory (so it does not become outdated).
 > 4. **Delete this notice.**
 > 5. Follow [Core CMS Template's "Set Up Project"][core-cms-template-setup].
-> 6. Adapt or Remove "[Quick Start](#quick-start)" accodrding to your project.
+> 6. Adapt or Remove "[Quick Start](#quick-start)" according to your project.
 
 ## Quick Start
 

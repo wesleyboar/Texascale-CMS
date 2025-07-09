@@ -38,4 +38,4 @@ jobs:
         with:
           context: cms
           push: true
-          tags: taccwma/custom-cms:${{ steps.vars.outputs.sha_short }}
+          tags: taccwma/texascale-cms:${{ steps.vars.outputs.sha_short }}
