@@ -1,0 +1,53 @@
+# ignore intellij IDE things
+.idea/
+
+# macOS DS_Store nonsense
+.DS_Store
+
+# ignore secrets & settings
+## so dev learns those should not be committed in this repo
+*secrets.py
+*settings_custom.py
+*settings_local.py
+
+# no node modules
+node_modules/
+
+
+# ignore various Python things
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+*.egg-info/
+.installed.cfg
+*.egg
+*.manifest
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*,cover
+*.mo
+*.pot
+*.log
+docs/_build/
+.docs/build/
+target/
+
+# distribution / packaging
+dist/
+
+# vscode
+.vscode/
+
+# vim stuff
+*.swp

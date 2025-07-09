@@ -1,0 +1,3 @@
+CUSTOM_APPS = ['apps.example_app']
+CUSTOM_MIDDLEWARE = []
+STATICFILES_DIRS = ()
