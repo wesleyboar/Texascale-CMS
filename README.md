@@ -7,7 +7,6 @@ https://texascale.org/
 >
 > 4. **Delete this notice.**
 > 5. Follow [Core CMS Template's "Set Up Project"][core-cms-template-setup].
-> 6. Adapt or Remove "[Quick Start](#quick-start)" according to your project.
 
 ## Quick Start
 
