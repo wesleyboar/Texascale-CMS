@@ -18,8 +18,7 @@ SRC_ROOT="${SCRIPT_DIR}/../src"
 
 # Configure fallback for settings
 VERSION="main"
-BASE_URL="https://raw.githubusercontent.com/TACC/Core-CMS/refs/tags/${VERSION}"
-# BASE_URL="https://cdn.jsdelivr.net/gh/TACC/Core-CMS@${VERSION}"
+BASE_URL="https://cdn.jsdelivr.net/gh/TACC/Core-CMS@${VERSION}"
 CREATE_VAR_FILES=false
 
 # Functions
