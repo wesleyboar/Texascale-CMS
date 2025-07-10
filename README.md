@@ -5,8 +5,8 @@ https://texascale.org/
 > [!IMPORTANT]
 > After creating a repository from [Core CMS Template]:
 >
-> 4. **Delete this notice.**
-> 5. Follow [Core CMS Template's "Set Up Project"][core-cms-template-setup].
+> 4. Follow [Core CMS Template's "Set Up Project"][core-cms-template-setup].
+> 5. **Delete this notice.**
 
 ## Quick Start
 
