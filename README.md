@@ -11,12 +11,23 @@ Follow [Core CMS Template's "Start Project"][core-cms-template-start].
 > [!TIP]
 > This project is built as a customization of a TACC <abbr title="Content Management System">CMS</abbr> website. To manage this project's CMS, reference [Core-CMS-Template Docs][core-cms-template-docs]. To develop this project's custom code, keep reading.
 
-> [!IMPORTANT]
-> After creating a repository from [Core CMS Template]:
->
-> 1. Document how to develop this project.
-> 2. Remove this notice.
+### Styles
 
+Learn about [Texascale Stylesheets](./cms/src/taccsite_custom/texascale_cms/static/texascale_cms/css/README.md).
+
+> [!IMPORTANT]
+> If you change a `.postcss` file,  run **`npm run build`**.
+
+### Deploy
+
+> [!IMPORTANT]
+> Upon initial deploy to production:
+> * Change [Snippet #21](https://texascale.org/admin/djangocms_snippet/snippet/21/change/): in `href`, replace `css/build/` with  `css/` ([example](https://pprd.texascale.tacc.utexas.edu/admin/djangocms_snippet/snippet/21/change/)).
+> * Change [Snippet #35](https://texascale.org/admin/djangocms_snippet/snippet/35/change/): in `href`, replace `css/build/` with  `css/` ([example](https://pprd.texascale.tacc.utexas.edu/admin/djangocms_snippet/snippet/35/change/)).
+>
+> <details><summary>Why?</summary>
+> This repository builds a different CMS image than has previously been deployed to production. Certain changes must be made on production to accommodate this new image.
+> </details>
 
 <!-- Link Aliases -->
 
