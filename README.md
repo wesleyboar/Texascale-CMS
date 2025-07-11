@@ -21,9 +21,14 @@ Learn about [Texascale Stylesheets](./cms/src/taccsite_custom/texascale_cms/stat
 ### Deploy
 
 > [!IMPORTANT]
-> Upon initial deploy to production:
-> * Change [Snippet #21](https://texascale.org/admin/djangocms_snippet/snippet/21/change/): in `href`, replace `css/build/` with  `css/` ([example](https://pprd.texascale.tacc.utexas.edu/admin/djangocms_snippet/snippet/21/change/)).
-> * Change [Snippet #35](https://texascale.org/admin/djangocms_snippet/snippet/35/change/): in `href`, replace `css/build/` with  `css/` ([example](https://pprd.texascale.tacc.utexas.edu/admin/djangocms_snippet/snippet/35/change/)).
+> Initial deploy to [production site](https://texascale.org/) requires manual updates.
+>
+> In certain snippets, replace `css/build/` with  `css/`:
+>
+> * [Snippet #21](https://texascale.org/admin/djangocms_snippet/snippet/21/change/) (ref: [staging](https://pprd.texascale.tacc.utexas.edu/admin/djangocms_snippet/snippet/21/change/))
+> * [Snippet #35](https://texascale.org/admin/djangocms_snippet/snippet/35/change/) (ref: [staging](https://pprd.texascale.tacc.utexas.edu/admin/djangocms_snippet/snippet/35/change/))
+> * [Snippet #46](https://texascale.org/admin/djangocms_snippet/snippet/46/change/) (ref: [staging](https://pprd.texascale.tacc.utexas.edu/admin/djangocms_snippet/snippet/46/change/))
+> * [Snippet #47](https://texascale.org/admin/djangocms_snippet/snippet/47/change/) (ref: [staging](https://pprd.texascale.tacc.utexas.edu/admin/djangocms_snippet/snippet/47/change/))
 >
 > <details><summary>Why?</summary>
 > This repository builds a different CMS image than has previously been deployed to production. Certain changes must be made on production to accommodate this new image.
