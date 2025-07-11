@@ -2,13 +2,6 @@
 
 https://texascale.org/
 
-> [!IMPORTANT]
-> After creating a repository from [Core CMS Template]:
->
-> 6. Follow [Core CMS Template's "Set Up Project"][core-cms-template-setup].
->     - [**Configure Build Action**](https://github.com/TACC/Core-CMS-Template/blob/v0.2.1/docs/create-project.md#configure-build-action)
-> 7. **Delete this notice.**
-
 ## Quick Start
 
 Follow [Core CMS Template's "Start Project"][core-cms-template-start].
