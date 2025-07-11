@@ -21,7 +21,9 @@ Learn about [Texascale Stylesheets](./cms/src/taccsite_custom/texascale_cms/stat
 ### Deploy
 
 > [!IMPORTANT]
-> Initial deploy to [production site](https://texascale.org/) requires manual updates.
+> Initial deploy to [production site](https://texascale.org/) requires:
+> - manual updates (see below)
+> - [heavy testing](https://github.com/TACC/Texascale-CMS/pull/3)
 >
 > In certain snippets, replace `css/build/` with  `css/`:
 >
