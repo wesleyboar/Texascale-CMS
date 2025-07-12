@@ -1,5 +1,5 @@
 .s-header {
   font-size:  16px;
-  font-weight: var(--light);
+  font-weight: normal;
   font-family: var(--global-font-family--sans--cms);
 }
