@@ -1,4 +1,4 @@
-from django.urls import include, re_path
+from django.urls import re_path, include
 
 custom_urls = [
     # To support `taggit_autosuggest` (from `djangocms-blog`)
