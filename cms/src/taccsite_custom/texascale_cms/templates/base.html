@@ -1,13 +1,25 @@
 {% extends "base.html" %}
-{% load cms_tags static %}
+{% load cms_tags static has_url_with %}
 
-{% block assets_font %}
-  <link rel="stylesheet" href="https://use.typekit.net/xnr7bof.css">
-{% endblock assets_font %}
+{% with is_old_year=request.path|has_url_with_year:"2024-" %}
+
+{% block assets %}
+  {% if settings.TACC_CORE_STYLES_VERSION == 0 or is_old_year %}
+    {% include 'assets_site.html' %}
+  {% elif settings.TACC_CORE_STYLES_VERSION >= 1 %}
+    {% include 'assets_core.html' %}
+    {% include 'assets_core_cms.html' %}
+  {% endif %}
+{% endblock assets %}
 
 {% block assets_custom %}
   {{ block.super }}
 
+  {% if settings.TACC_CORE_STYLES_VERSION == 0 or is_old_year %}
+  <link rel="stylesheet" href="https://use.typekit.net/xnr7bof.css">
   <link rel="stylesheet" href="{% static 'texascale_cms/css/site.css' %}">
   <link rel="stylesheet" href="{% static 'texascale_cms/css/site.header.css' %}">
+  {% endif %}
 {% endblock assets_custom %}
+
+{% endwith %}
