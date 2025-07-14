@@ -13,7 +13,7 @@
 {% block assets_custom %}
   {{ block.super }}
 
-  {% if settings.TACC_CORE_STYLES_VERSION == 0 or is_old_year %}
+  {% if settings.TACC_CORE_STYLES_VERSION == 0 or is_design_legacy %}
   <link rel="stylesheet" href="https://use.typekit.net/xnr7bof.css">
   <link rel="stylesheet" href="{% static 'texascale_cms/css/site.css' %}">
   <link rel="stylesheet" href="{% static 'texascale_cms/css/site.header.css' %}">
