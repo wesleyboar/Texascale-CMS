@@ -1,10 +1,8 @@
 {% extends "base.html" %}
-{% load cms_tags static has_url_with %}
-
-{% with is_old_year=request.path|has_url_with_year:"2024-" %}
+{% load cms_tags static is_design %}
 
 {% block assets %}
-  {% if settings.TACC_CORE_STYLES_VERSION == 0 or is_old_year %}
+  {% if settings.TACC_CORE_STYLES_VERSION == 0 or is_design_legacy %}
     {% include 'assets_site.html' %}
   {% elif settings.TACC_CORE_STYLES_VERSION >= 1 %}
     {% include 'assets_core.html' %}
