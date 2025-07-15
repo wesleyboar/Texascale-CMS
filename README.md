@@ -11,6 +11,10 @@ Follow [Core CMS Template's "Start Project"][core-cms-template-start].
 > [!TIP]
 > This project is built as a customization of a TACC <abbr title="Content Management System">CMS</abbr> website. To manage this project's CMS, reference [Core-CMS-Template Docs][core-cms-template-docs]. To develop this project's custom code, keep reading.
 
+## Contributing
+
+To contribute, first read [How to Contirbute][Contributing].
+
 ### Styles
 
 Learn about [Texascale Stylesheets](./cms/src/taccsite_custom/texascale_cms/static/texascale_cms/css/README.md).
@@ -27,3 +31,5 @@ Learn about [Texascale Stylesheets](./cms/src/taccsite_custom/texascale_cms/stat
 [core-cms-template-setup]: https://github.com/TACC/Core-CMS-Template/blob/v0.3.1/docs/create-project.md#set-up-project
 [core-cms-template-start]: https://github.com/TACC/Core-CMS-Template/blob/v0.3.1/docs/start-project.md#start-project
 [core-cms-template-docs]: https://github.com/TACC/Core-CMS-Template/blob/v0.3.1/docs/README.md#tacc-custom-cms
+
+[Contributing]: ./contributing.md
