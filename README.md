@@ -18,24 +18,6 @@ Learn about [Texascale Stylesheets](./cms/src/taccsite_custom/texascale_cms/stat
 > [!IMPORTANT]
 > If you change a `.postcss` file,  run **`npm run build`**.
 
-### Deploy
-
-> [!IMPORTANT]
-> Initial deploy to [production site](https://texascale.org/) requires:
-> - manual updates (see below)
-> - [heavy testing](https://github.com/TACC/Texascale-CMS/pull/3)
->
-> In certain snippets, replace `css/build/` with  `css/`:
->
-> * [Snippet #21](https://texascale.org/admin/djangocms_snippet/snippet/21/change/) (ref: [staging](https://pprd.texascale.tacc.utexas.edu/admin/djangocms_snippet/snippet/21/change/))
-> * [Snippet #35](https://texascale.org/admin/djangocms_snippet/snippet/35/change/) (ref: [staging](https://pprd.texascale.tacc.utexas.edu/admin/djangocms_snippet/snippet/35/change/))
-> * [Snippet #46](https://texascale.org/admin/djangocms_snippet/snippet/46/change/) (ref: [staging](https://pprd.texascale.tacc.utexas.edu/admin/djangocms_snippet/snippet/46/change/))
-> * [Snippet #47](https://texascale.org/admin/djangocms_snippet/snippet/47/change/) (ref: [staging](https://pprd.texascale.tacc.utexas.edu/admin/djangocms_snippet/snippet/47/change/))
->
-> <details><summary>Why?</summary>
-> This repository builds a different CMS image than has previously been deployed to production. Certain changes must be made on production to accommodate this new image.
-> </details>
-
 <!-- Link Aliases -->
 
 [Core CMS]: https://github.com/TACC/Core-CMS
