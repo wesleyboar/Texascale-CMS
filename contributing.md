@@ -39,7 +39,7 @@ Our [production site] is built from a specific commit.
 
 Only appointed team members may release versions.
 
-1. Update version:
+1. Update version:\
     `npm version N.N.N`
 2. Review. Commit. Push.
 3. Create release and tag on GitHub.
