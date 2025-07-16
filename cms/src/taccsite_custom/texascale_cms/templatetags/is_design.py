@@ -1,5 +1,6 @@
 import re
 from django import template
+from django.conf import settings
 
 register = template.Library()
 
@@ -63,11 +64,11 @@ def is_design_year(context, year_comparison):
         return False
 
 @register.simple_tag(takes_context=True)
-def is_design_legacy(context, cutoff_year=2024):
+def is_design_legacy(context):
     """
     Custom Template Tag `is_design_legacy`
 
-    Use: Check if current page URL is from legacy design period (2018–2024).
+    Use: Check if current page should use legacy design based on URL year and settings.
 
     Load custom filter into template:
         {% load is_design %}
@@ -79,10 +80,16 @@ def is_design_legacy(context, cutoff_year=2024):
             {# condition evaluates to True #}
         {% endif %}
 
-        {# Check with custom cutoff #}
-        {# given path '.../2018/...' — '.../2023/...' #}
-        {% if is_design_legacy:"2023" %}
-            {# condition evaluates to True #}
-        {% endif %}
+    Logic:
+        - Returns True if TACC_CORE_STYLES_VERSION == 0 (force legacy)
+        - Returns True if URL year is 2024 or earlier
+        - Returns False otherwise (modern design)
     """
-    return is_design_year(context, f"{cutoff_year}-")
+    core_styles_version = getattr(settings, 'TACC_CORE_STYLES_VERSION', 1)
+
+    if core_styles_version == 0:
+        return True
+    if core_styles_version >= 1:
+        return is_design_year(context, "2024-")
+
+    return False

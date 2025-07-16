@@ -1,10 +1,21 @@
 {% extends "base.html" %}
 {% load cms_tags static is_design %}
 
+{% block js %}
+  {% is_design_legacy as is_legacy %}
+
+  {% if is_legacy %}
+    <h3>Legacy</h3>
+  {% else %}
+    <h3>Modern</h3>
+  {% endif %}
+{% endblock %}
+
 {% block assets %}
-  {% if settings.TACC_CORE_STYLES_VERSION == 0 or is_design_legacy %}
+  {% is_design_legacy as is_legacy %}
+  {% if is_legacy %}
     {% include 'assets_site.html' %}
-  {% elif settings.TACC_CORE_STYLES_VERSION >= 1 %}
+  {% else %}
     {% include 'assets_core.html' %}
     {% include 'assets_core_cms.html' %}
   {% endif %}
@@ -13,7 +24,8 @@
 {% block assets_custom %}
   {{ block.super }}
 
-  {% if settings.TACC_CORE_STYLES_VERSION == 0 or is_design_legacy %}
+  {% is_design_legacy as is_legacy %}
+  {% if is_legacy %}
   <link rel="stylesheet" href="https://use.typekit.net/xnr7bof.css">
   <link rel="stylesheet" href="{% static 'texascale_cms/css/site.css' %}">
   <link rel="stylesheet" href="{% static 'texascale_cms/css/site.header.css' %}">
