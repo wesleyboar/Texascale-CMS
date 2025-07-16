@@ -1,16 +1,6 @@
 {% extends "base.html" %}
 {% load cms_tags static is_design %}
 
-{% block js %}
-  {% is_design_legacy as is_legacy %}
-
-  {% if is_legacy %}
-    <h3>Legacy</h3>
-  {% else %}
-    <h3>Modern</h3>
-  {% endif %}
-{% endblock %}
-
 {% block assets %}
   {% is_design_legacy as is_legacy %}
   {% if is_legacy %}
