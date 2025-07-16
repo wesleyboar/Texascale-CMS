@@ -35,6 +35,10 @@ Learn about [Texascale Stylesheets](./cms/src/taccsite_custom/texascale_cms/stat
 > [!IMPORTANT]
 > If you change a `.postcss` file,  run **`npm run build`**.
 
+### Blog/News Feature
+
+This feature is [enabled](https://pprd.texascale.tacc.utexas.edu/testing/news/?edit) but **not** used.
+
 <!-- Link Aliases -->
 
 [Core CMS]: https://github.com/TACC/Core-CMS
