@@ -1,4 +1,4 @@
-FROM taccwma/core-cms:latest
+FROM taccwma/core-cms:chore-remove-taccsite_custom
 
 WORKDIR /code
 
