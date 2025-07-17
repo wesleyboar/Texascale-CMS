@@ -1,4 +1,4 @@
-FROM taccwma/core-cms:task-fp-1439-yearly-site-theme-for-texascale
+FROM taccwma/core-cms:latest
 
 WORKDIR /code
 
