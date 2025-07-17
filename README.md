@@ -21,7 +21,7 @@ To contribute, first read [How to Contirbute][Contributing].
 To publish a new year online:
 
 1. In [Texascale Custom Settings], set `TEXASCALE_PUBLISHED_YEAR` to the current year.
-2. [Deploy](https://tacc-main.atlassian.net/wiki/spaces/~wbomar/pages/7275891) that setting change.
+2. [Deploy](https://tacc-main.atlassian.net/wiki/x/cwVv) that setting change.
 
 > [!IMPORTANT]
 > **If neglected**, then homepage[^1] might have **incorrect styles**.
